@@ -35,11 +35,11 @@ export default function App() {
             <Text style={styles.repository}>{repository.title}</Text>
 
             <View style={styles.techsContainer}>
-              {repository.techs.map((tech, index)=>(
+              {repository.techs.map((tech, index) => (
                 <Text key={index} style={styles.tech}>
                   {tech}
                 </Text>
-              ))};
+              ))}
             </View>
 
             <View style={styles.likesContainer}>
@@ -49,7 +49,7 @@ export default function App() {
                 testID={`repository-likes-${repository.id}`}
               >
                 {`${repository.likes} curtidas`}
-            </Text>
+              </Text>
             </View>
 
             <TouchableOpacity
